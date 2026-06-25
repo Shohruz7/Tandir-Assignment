@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tandir · Uzbek Kitchen &amp; Choyxona</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- nav -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">Tandir</a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <span class="eyebrow">Uzbek Kitchen &amp; Choyxona · New York</span>
+      <h1>From the Tandir, From <span class="accent">Samarkand</span></h1>
+      <p class="tagline">The flavors of Samarkand and the Silk Road: fragrant plov, hand pulled lagman, and smoky shashlik, served the way our grandmothers intended.</p>
+      <a href="#menu" class="btn"><i class="fa-solid fa-utensils"></i> Explore Our Menu</a>
+    </div>
+    <a href="#menu" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- menu -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Crafted Daily</span>
+        <h2>Our Menu</h2>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="tab active" data-tab="starters">Starters</button>
+        <button class="tab" data-tab="mains">Mains</button>
+        <button class="tab" data-tab="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-panel active" data-section="starters">
+        <div class="panel-banner reveal">
+          <img src="https://loremflickr.com/600/400/samsa,uzbek?lock=21" alt="Starters" loading="lazy" />
+          <div class="pb-text">
+            <h3>Starters &amp; Salatlar</h3>
+            <p>Fresh salads, warm tandir bread, and shareable bites to begin.</p>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <!-- items injected --></div>
+      </div>
+
+      <div class="menu-panel" data-section="mains">
+        <div class="panel-banner reveal">
+          <img src="https://loremflickr.com/600/400/plov,pilaf?lock=22" alt="Mains" loading="lazy" />
+          <div class="pb-text">
+            <h3>Mains &amp; Osh</h3>
+            <p>The heart of the table: plov, lagman, kebabs, and slow cooked stews.</p>
+          </div>
+        </div>
+        <div class="menu-grid"></div>
+      </div>
+
+      <div class="menu-panel" data-section="desserts">
+        <div class="panel-banner reveal">
+          <img src="https://loremflickr.com/600/400/baklava,sweets?lock=23" alt="Desserts" loading="lazy" />
+          <div class="pb-text">
+            <h3>Desserts &amp; Choy</h3>
+            <p>Honeyed sweets and fragrant tea to linger over, choyxona style.</p>
+          </div>
+        </div>
+        <div class="menu-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">A Taste of the Room</span>
+        <h2>Gallery</h2>
+      </div>
+
+      <div class="slider reveal" id="slider">
+        <div class="slides" id="slides">
+          <div class="slide active"><img src="https://loremflickr.com/1200/675/plov,pilaf?lock=11" alt="Uzbek plov" /></div>
+          <div class="slide"><img src="https://loremflickr.com/1200/675/lagman,noodles?lock=12" alt="Lagman noodles" /></div>
+          <div class="slide"><img src="https://loremflickr.com/1200/675/shashlik,kebab?lock=13" alt="Shashlik skewers" /></div>
+          <div class="slide"><img src="https://loremflickr.com/1200/675/samsa,pastry?lock=14" alt="Samsa pastry" /></div>
+          <div class="slide"><img src="https://loremflickr.com/1200/675/manti,dumplings?lock=15" alt="Manti dumplings" /></div>
+          <div class="slide"><img src="https://loremflickr.com/1200/675/uzbek,bread,tandir?lock=16" alt="Tandir bread" /></div>
+        </div>
+        <button class="slider-btn prev" id="slidePrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="slideNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <h2>Our Story</h2>
+        <p>Tandir began with a clay tandir oven, a sack of golden rice, and recipes carried from Samarkand across generations. We opened our doors to share the food we grew up on. The kind of meals that fill a long table and keep everyone talking past midnight.</p>
+        <p>To us, hospitality is sacred. A pot of plov is never cooked for one, and the choy is always pouring. We source spices from the bazaar, knead our non by hand, and welcome every guest the way our grandmothers welcomed theirs, as family.</p>
+        <div class="story-divider">
+          <span class="line"></span>
+          <span>Mehmon · our guest, our honor</span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about-frame">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="A signature plated dish" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact form + map -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Come Say Hello</span>
+        <h2>Reserve &amp; Reach Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label for="cName">Name</label>
+          <input type="text" id="cName" placeholder="Your name" required />
+          <label for="cEmail">Email</label>
+          <input type="email" id="cEmail" placeholder="you@example.com" required />
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" placeholder="Tell us about your visit, party size, or special request…" required></textarea>
+          <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+
+        <div class="map-frame reveal">
+          <iframe
+            title="Tandir location"
+            src="https://www.google.com/maps?q=New+York,+NY&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">Tandir</div>
+        <p>An Uzbek kitchen &amp; choyxona. The flavors of the Silk Road, served with warmth and a generous table.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>
+          Mon to Thu · 10am to 10pm<br />
+          Fri · Closed<br />
+          Sat to Sun · 11pm to 3am
+        </p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>78 Silk Road Avenue<br />New York, NY 10001</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2026 Tandir. Pishirildi mehr bilan, cooked with love.</div>
+  </footer>
+
+  <!-- cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+      <div class="cart-actions">
+        <button class="clear-btn" id="clearCart">Clear Cart</button>
+        <button class="checkout-btn" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
