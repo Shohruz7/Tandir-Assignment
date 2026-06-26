@@ -48,3 +48,7 @@ h1, h2, h3, h4 {
 .btn:active { transform: scale(.98); }
 
 @keyframes bob { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,10px); } }
+
+/* fade-up on scroll, toggled by the Reveal component */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease-soft), transform .7s var(--ease-soft); }
+.reveal.is-visible { opacity: 1; transform: none; }
