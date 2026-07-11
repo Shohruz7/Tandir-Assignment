@@ -1,0 +1,18 @@
+# Render Blueprint for the Tandir HW3 app (single service: API + built React app).
+# Render reads this from the repo root. Deploy via Render Dashboard -> New -> Blueprint.
+# MONGODB_URI uses sync:false so Render prompts for it (kept out of the repo).
+services:
+  - type: web
+    name: tandir-hw3
+    runtime: node
+    plan: free
+    rootDir: hw-3
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
